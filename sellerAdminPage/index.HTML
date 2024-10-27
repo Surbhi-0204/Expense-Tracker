@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller's Admin Page</title>
+</head>
+<body>
+    <div id="details">
+        <form onsubmit="handleFormSubmit(event)">
+            <label for="price">Selling Price:</label>
+            <input type="number" name="price" id="price" required>
+            <label for="name">Product Name:</label>
+            <input type="text" name="name" id="name" required>
+            <button type="submit">Add Product</button><br>
+        </form>  
+    </div>
+    <div id="products">
+        <h3><b>Products</b></h3><br>
+        <ul id="listOfProduct"></ul><br>
+        <p><b>Total Value Worth of Products: </b>Rs <span id="totalValue">0</span></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
